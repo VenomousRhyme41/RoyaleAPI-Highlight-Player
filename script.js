@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RoyaleAPI - Highlight Player
 // @namespace    https://github.com/VenomousRhyme41/RoyaleAPI-Highlight-Player
-// @version      1
+// @version      1.1
 // @description  Highlights any player in the clan page
 // @icon         https://cdn.royaleapi.com/static/img/branding/royaleapi-logo-128.png?t=feb800c3c
 // @author       VenomousRhyme41
@@ -59,7 +59,7 @@
             border:2px solid white;user-select:none;font-family:sans-serif;
         `;
         btn.onclick = () => {
-            const tag = prompt(`Player tag (e.g. V9CRU9V2V)\nCurrent: #${TARGET_TAG || 'None'}`, TARGET_TAG);
+            const tag = prompt(`Player tag (e.g. PRLGCJGC)\nCurrent: #${TARGET_TAG || 'None'}`, TARGET_TAG);
             if (!tag) return;
             const clean = tag.trim().replace(/^#/g, '').toUpperCase();
             if (!clean) return alert('Invalid tag');
